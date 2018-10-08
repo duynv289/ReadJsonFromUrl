@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp_32"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/dt"/>
+
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/main"
+        app:layout_constraintStart_toStartOf="@+id/txtDt"
+        app:layout_constraintTop_toBottomOf="@+id/txtDt" />
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/temp"
+        app:layout_constraintStart_toEndOf="@+id/txtMain"
+        app:layout_constraintTop_toBottomOf="@+id/txtMain" />
+
+    <TextView
+        android:id="@+id/txtTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/temp_min"
+        app:layout_constraintStart_toStartOf="@+id/txtTemp"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemp" />
+
+    <TextView
+        android:id="@+id/txtTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/temp_max"
+        app:layout_constraintStart_toStartOf="@+id/txtTempMin"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempMin" />
+
+    <TextView
+        android:id="@+id/txtPressSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/press_sure"
+        app:layout_constraintStart_toStartOf="@+id/txtTempMax"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempMax" />
+
+    <TextView
+        android:id="@+id/txtSeaLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/sea_level"
+        app:layout_constraintStart_toStartOf="@+id/txtPressSure"
+        app:layout_constraintTop_toBottomOf="@+id/txtPressSure" />
+
+    <TextView
+        android:id="@+id/txtGrndLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/grnd_level"
+        app:layout_constraintStart_toStartOf="@+id/txtSeaLevel"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeaLevel" />
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/humidity"
+        app:layout_constraintStart_toStartOf="@+id/txtGrndLevel"
+        app:layout_constraintTop_toBottomOf="@+id/txtGrndLevel" />
+
+    <TextView
+        android:id="@+id/txtTempKf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/temp_kf"
+        app:layout_constraintStart_toStartOf="@+id/txtHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/txtHumidity" />
+
+    <TextView
+        android:id="@+id/txtWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/weather"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempKf" />
+
+    <TextView
+        android:id="@+id/txtWeatherId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/id"
+        app:layout_constraintStart_toEndOf="@+id/txtWeather"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeather" />
+
+    <TextView
+        android:id="@+id/txtWeatherMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/main"
+        app:layout_constraintStart_toStartOf="@+id/txtWeatherId"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeatherId" />
+
+    <TextView
+        android:id="@+id/txtWeatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="@+id/txtWeatherMain"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeatherMain" />
+
+    <TextView
+        android:id="@+id/txtWeatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/id"
+        app:layout_constraintStart_toStartOf="@+id/txtWeatherDescription"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeatherDescription" />
+</android.support.constraint.ConstraintLayout>

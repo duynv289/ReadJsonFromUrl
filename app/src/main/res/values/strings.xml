@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ReadJsonFromUrl</string>
+    <string name="list">"list" : </string>
+    <string name="dt">"dt" : </string>
+    <string name="main">"main" : </string>
+    <string name="temp">"temp" :</string>
+    <string name="temp_min">"temp_min" : </string>
+    <string name="temp_max">"temp_max" :  </string>
+    <string name="press_sure">"press_sure" : </string>
+    <string name="sea_level">"sea_level" : </string>
+    <string name="grnd_level">"grnd_level" : </string>
+    <string name="humidity">"humidity" : </string>
+    <string name="temp_kf">"temp_kf" : </string>
+
+    <string name="weather">"weather" : </string>
+    <string name="id">"id" : </string>
+    <string name="description">"description" : </string>
+    <string name="icon">"icon" : </string>
+</resources>
