@@ -1,14 +1,14 @@
 package com.liz.myapplication.enity;
 
-public class List {
-    private long dt;
+public class Lists {
+    private int dt;
     private Main main;
     private Weather weather;
 
-    public List() {
+    public Lists() {
     }
 
-    public List(long dt, Main main, Weather weather) {
+    public Lists(int dt, Main main, Weather weather) {
         this.dt = dt;
         this.main = main;
         this.weather = weather;
@@ -18,7 +18,7 @@ public class List {
         return dt;
     }
 
-    public void setDt(long dt) {
+    public void setDt(int dt) {
         this.dt = dt;
     }
 
@@ -40,7 +40,7 @@ public class List {
 
     @Override
     public String toString() {
-        return "List{" +
+        return "Lists{" +
                 "dt=" + dt +
                 ", main=" + main +
                 ", weather=" + weather +
